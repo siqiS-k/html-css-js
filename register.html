@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html>
+   <head>
+     <title>Register</title>
+     <link href="css/sites.css" rel="stylesheet" type="text/css" />
+     <script type="text/javascript" src="js/register_validation.js"></script>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   </head>
+</head>
+<!-- Header Starts Here -->
+<body>
+    <div class="banner inner-banner">
+	  <div class="header">
+	    <div class="container">
+		   <div class="logo">
+			  <a href="index.html"><img src="images/logo.png" style="height:80px;width:140px;" alt=""></a>
+		   </div>
+		   <span class="menu"> Menu</span>
+		   <ul class="nav banner-nav" style="margin:0 0 0 15%;">                                     
+					   <li class="dropdown1"><a href="index.html">Home</a></li>
+					   <li class="dropdown1"><a class="down-scroll" href="photo.html">Services</a>
+					      <ul class="dropdown2">
+					         <li><a href="photo.html">Introduction</a></li>
+						     <li><a href="puzzle.html">Puzzle</a></li>
+							 <li><a>Editing</a></li>
+							 <li><a>Template</a></li>
+						  </ul>
+				       </li>     
+					   <li class="dropdown1"><a href="about.html">About us</a></li>  					
+					   <li class="dropdown1"><a href="contact.html">Contact</a></li>  
+		   </ul>
+	    </div>
+	  </div>
+<!-- page heading -->
+	  <div id="breadcrumb_wrapper">
+		<div class="container"">
+		   <h3>Register</h3>
+		</div>
+      </div>
+   </div>
+<!-- Header Ends Here -->	
+	<div class="register-content" name="register_r">
+		<div class="container" name="container_r">
+		  <div class="register" name="register2_r">
+		  	  <form name="register_form" method="post" action="insert.jsp"> 
+				 <div class="register-top-grid" name="top_r">
+					<h3>PERSONAL INFORMATION</h3>
+					 <p>First Name *</br>
+						<input type="text" name="first_name" /> 
+					 </p>
+					 <p>Last Name *</br>
+						<input type="text" name="last_name" /> 
+					 </p>
+					 <p>Email Address * <input type="text" name="checkemail_a" disabled="disabled" class="checkemail" style=" border-style:none none none none; background-color:transparent;color:red;"/></br>
+						 <input type="text" name="email_address" onchange="checkemail()"/> 
+					 </p>			
+		         </div>
+				 <div class="register-bottom-grid">
+					 <h3>LOGIN INFORMATION</h3>
+					 <p>Password *</br>
+						 <input type="password" name="password">
+					 </p>
+					 <p>Confirm Password *<input type="text" name="checkepass_w" disabled="disabled" class="checkpass" style=" border-style:none none none none; background-color:transparent;color:red;"/></br>
+						 <input type="password" name="confirm_pass" onchange="checkpassword()"/>
+					 </p>
+				 </div>
+			     <div class="register-but">
+					 <input type="submit" value="submit" onclick="checkregister()" />
+				 </div>
+			  </form>
+		  </div>
+		</div>
+	 </div>
+
+		<!-- here stars scrolling icon -->
+</body>
+</html>

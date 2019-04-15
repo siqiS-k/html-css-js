@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html>
+   <head>
+     <title>Login</title>
+     <link href="css/sites.css" rel="stylesheet" type="text/css" />
+     <script type="text/javascript" src="js/login_validation.js"></script>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   </head>
+   <body>
+<!-- Header Starts Here -->
+   <div class="banner inner-banner">
+	  <div class="header">
+	    <div class="container">
+		   <div class="logo">
+			  <a href="index.html"> <img src="images/logo.png" style="height:80px;width:140px;"alt=""></a>
+		   </div>
+		   <span class="menu"> Menu</span>
+		   <ul class="nav banner-nav" style="margin:0 0 0 15%;">                                     
+					   <li class="dropdown1"><a href="index.html">Home</a></li>
+					   <li class="dropdown1"><a class="down-scroll" href="photo.html">Services</a>
+					      <ul class="dropdown2">
+					         <li><a href="photo.html">Introduction</a></li>
+						     <li><a href="puzzle.jsp">Puzzle</a></li>
+							 <li><a>Editing</a></li>
+							 <li><a>Template</a></li>
+						  </ul>
+				       </li>    
+					   <li class="dropdown1"><a href="about.html">About us</a></li>  					
+					   <li class="dropdown1"><a href="contact.html">Contact</a></li>  
+		   </ul>
+	    </div>
+	  </div>
+<!-- page heading -->
+	  <div id="breadcrumb_wrapper">
+		<div class="container">
+		   <h3>Login</h3>
+		</div>
+      </div>
+   </div>
+
+<!-- Header Ends Here -->	
+	<div class="login-content">
+		<div class="container">
+		<div class="login-page">
+			   <div class="account_grid">
+			   <div class="col-md-6 login-left wow fadeInLeft" data-wow-delay="0.4s" style="width:45%; float:left;" >
+			  	 <h3>NEW CUSTOMERS</h3>
+				 <p>By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.</p>
+				 <a class="acount-btn" href="register.html">Create an Account</a>
+			   </div>
+			   <div class="col-md-6 login-right wow fadeInRight" data-wow-delay="0.4s" style="width:50%; float:left; " >
+			  	<h3>REGISTERED CUSTOMERS</h3>
+				<p>If you have an account with us, please log in.</p>
+				<form name="login_form" action="login.jsp">
+				  <p>Email Address *<input type="text" name="checkemail_a" class="checkemail" style=" border-style:none none none none; background-color:transparent;color:red;" disabled="disabled"/></br>
+					<input type="text" name="email_address" onchange="checkemail()" /> 
+				  </p>
+				  <p>Password * <input type="text" name="checkpass_w" class="checkpass" style=" border-style:none none none none; background-color:transparent;color:red;" disabled="disabled"/></br>
+					<input type="password" name="pass"> 
+				  </p>
+				  <a class="forgot" href="#">Forgot Your Password?</a>
+				  <input type="submit" value="Login" onclick="checklogin()">
+			    </form>
+			   </div>	
+			 </div>
+		   </div>
+		</div>
+	</div>
+	<div style="height:40px;"></div>
+	
+</body>
+</html>
